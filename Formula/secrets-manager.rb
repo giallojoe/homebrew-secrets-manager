@@ -1,21 +1,21 @@
 class SecretsManager < Formula
   desc "A tool to manage secrets and configurations and working with aws secrets-manager, inspired by https://github.com/ThePrimeagen/projector"
   homepage "https://github.com/giallojoe/secrets-manager"
-  version "0.1.2"
+  version "0.1.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.2/secrets-manager-aarch64-apple-darwin.tar.xz"
-      sha256 "0615ce5f1c701715d7dd5297c6c5f0b307b69f02052737e710964bc0c4bfc4c0"
+      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.3/secrets-manager-aarch64-apple-darwin.tar.xz"
+      sha256 "39ada0073d155bc9cb61a3faf3bc9d620452a69c79b115e11d0bbe269e866cc6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.2/secrets-manager-x86_64-apple-darwin.tar.xz"
-      sha256 "3108a1a60fa0802273c608fcbc5faf51091face2606ee400da0dc3f745a938d0"
+      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.3/secrets-manager-x86_64-apple-darwin.tar.xz"
+      sha256 "7ea6f69c6c2da49b2e9a8a87935bbfcdeb9db537360d0e93403c0ec35dd41997"
     end
   end
   if OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.2/secrets-manager-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "288beb4331567198cf4e312d5cf74d3c22e6c92619d360becc80ae97a16650bc"
+      url "https://github.com/giallojoe/secrets-manager/releases/download/0.1.3/secrets-manager-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "c77fdfee5dd22e5dc70f3c346a1086fd1fe74a81abdc5fd0d8ff8dbe553a4caf"
     end
   end
   license "MIT"
